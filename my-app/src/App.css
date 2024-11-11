@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+        font-family: Raleway, sans-serif;
+        background-color:#1b1523;
+        color: #fff;
+        text-align: center;
+      }
+h1{
+    margin-left: 700px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgb(85, 13, 85);
+   border-top-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   border: 1px solid white;
+    height: 40px;
+    width: 380px;
+  
+}
+.button{
+    text-align: center;
+     background-color:transparent;
+     color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(112, 15, 107);
+    color: white;
+}
+
+
+.container{
+    margin-top: 8px;
+    margin-left: 280px;
+    height: 675px;
+    display: grid;
+    grid-template-columns: repeat(4 , 300px);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.card{
+    margin-top: 10px;
+    position: relative;
+
+}
+.card img{
+    width: 296px;
+    height: 210px;
+    display: block;
+    border-radius: 20px;
+     border: 2px,solid,white;
+}
+.card .front{
+    position: absolute;
+   transform: skewY(90deg) ;
+    transform: all ease-in 0.3s;
+}
+.flipped .front{
+    transform: skewY(0deg);
+    transition-delay: 0.2s;
+}
+.card .back{
+    transform: all ease-in 0.3s;
+    transition-delay: 0.2s;
+}
+.flipped .back{
+    transform: skewY(90deg);
+    transition-delay: 0s;
+    
+}
+p{
+    margin-top: 20px;
+    font-size: 20px;
+}
